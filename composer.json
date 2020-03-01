@@ -12,9 +12,9 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=7.0",
-    "illuminate/support": ">=5.5",
-    "illuminate/config": "5.*",
-    "illuminate/database": "5.*"
+    "illuminate/support": ">=6.0",
+    "illuminate/config": "6.*",
+    "illuminate/database": "6.*"
   },
   "autoload": {
     "psr-4": {
