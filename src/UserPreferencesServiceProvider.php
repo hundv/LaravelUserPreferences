@@ -1,6 +1,6 @@
 <?php
 
-namespace RobTrehy\LaravelUserPreferences;
+namespace HundV\LaravelUserPreferences;
 
 use Illuminate\Support\ServiceProvider;
 

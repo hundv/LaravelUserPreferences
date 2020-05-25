@@ -1,11 +1,11 @@
 {
-  "name": "robtrehy/laravel-user-preferences",
+  "name": "hundv/laravel-user-preferences",
   "description": "A package for Laravel to store user preferences for your project.",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Rob Trehy",
+      "name": "Rob Trehy (ehemals...)",
       "email": "robert@trehy.co.uk"
     }
   ],
@@ -18,16 +18,16 @@
   },
   "autoload": {
     "psr-4": {
-      "RobTrehy\\LaravelUserPreferences\\": "src/"
+      "HundV\\LaravelUserPreferences\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "RobTrehy\\LaravelUserPreferences\\UserPreferencesServiceProvider"
+        "HundV\\LaravelUserPreferences\\UserPreferencesServiceProvider"
       ],
       "aliases": {
-        "SimplePackage": "RobTrehy\\LaravelUserPreferences\\UserPreferencesFacade"
+        "SimplePackage": "HundV\\LaravelUserPreferences\\UserPreferencesFacade"
       }
     }
   }

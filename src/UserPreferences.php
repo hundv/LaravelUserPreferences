@@ -1,6 +1,6 @@
 <?php
 
-namespace RobTrehy\LaravelUserPreferences;
+namespace HundV\LaravelUserPreferences;
 
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
@@ -11,7 +11,7 @@ use DB;
  *
  * This class handles the user preferences in the application.
  *
- * @package RobTrehy\LaravelUserPreferences
+ * @package HundV\LaravelUserPreferences
  */
 class UserPreferences {
     /**

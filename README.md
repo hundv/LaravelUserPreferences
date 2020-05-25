@@ -5,27 +5,27 @@ The preferences are stored as JSON in a single database column. The default stor
 the `users` table.
 
 ## Installation
-1. Run `composer require robtrehy/laravel-user-preferences` to include this in your project.
+1. Run `composer require hundv/laravel-user-preferences` to include this in your project.
 2. Add the UserPreferences alias to your `config\app.php` file:
     ```PHP
-    'UserPreferences' => \RobTrehy\LaravelUserPreferences\UserPreferences::class,
+    'UserPreferences' => \HundV\LaravelUserPreferences\UserPreferences::class,
     ```
 3. Publish the config file with the following command
     ```
-    php artisan vendor:publish --provider="RobTrehy\LaravelUserPreferences\UserPreferencesServiceProvider" --tag="config"
+    php artisan vendor:publish --provider="HundV\LaravelUserPreferences\UserPreferencesServiceProvider" --tag="config"
     ```
 4. Modify the published configuration file to your requirements. The file is located at `config/user-preferences.php`.
 5. Add the `preferences` column to the database. If you wish to add this to the `users` table, a migration file is 
 included, just run the following command
     ```
-    php artisan vendor:publish --provider="RobTrehy\LaravelUserPreferences\UserPreferencesServiceProvider" --tag="migrations" && php artisan migrate
+    php artisan vendor:publish --provider="HundV\LaravelUserPreferences\UserPreferencesServiceProvider" --tag="migrations" && php artisan migrate
     ```
     
 ## Configuration
 Open `config/user-preferences.php` to adjust the packages configuration. 
 
 If this file doesn't exist, run 
-`php artisan vendor:public --provider="RobTrehy\LaravelUserPreferences\UserPreferencesServiceProvider" --tag="config"` 
+`php artisan vendor:public --provider="HundV\LaravelUserPreferences\UserPreferencesServiceProvider" --tag="config"` 
 to create the default configuration file.
 
 Set `table`, `column`, and `primary_key` to match your requirements. `primary_key` should be the users id.
@@ -48,7 +48,7 @@ In the `defaults` array you can set your default values for user preferences.
 ## Usage
 Include LaravelUserPreferences into your controllers with
 ``` PHP
-use RobTrehy\LaravelUserPreferences\UserPreferences
+use HundV\LaravelUserPreferences\UserPreferences
 ```
 You can then use `UserPreferences` class to access the methods in this package.
 
