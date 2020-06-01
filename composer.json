@@ -1,34 +1,32 @@
 {
-  "name": "hundv/laravel-user-preferences",
-  "description": "A package for Laravel to store user preferences for your project.",
-  "type": "library",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Rob Trehy (ehemals...)",
-      "email": "robert@trehy.co.uk"
+    "name": "hundv/laravel-user-preferences",
+    "description": "A package for Laravel to store user preferences for your project.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Rob Trehy (ehemals...)",
+        "email": "robert@trehy.co.uk"
+    }],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^6.0 || ^7.0",
+        "illuminate/config": "^6.0 || ^7.0",
+        "illuminate/database": "^6.0 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HundV\\LaravelUserPreferences\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HundV\\LaravelUserPreferences\\UserPreferencesServiceProvider"
+            ],
+            "aliases": {
+                "SimplePackage": "HundV\\LaravelUserPreferences\\UserPreferencesFacade"
+            }
+        }
     }
-  ],
-  "minimum-stability": "stable",
-  "require": {
-    "php": ">=7.0",
-    "illuminate/support": ">=6.0",
-    "illuminate/config": "6.*",
-    "illuminate/database": "6.*"
-  },
-  "autoload": {
-    "psr-4": {
-      "HundV\\LaravelUserPreferences\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "HundV\\LaravelUserPreferences\\UserPreferencesServiceProvider"
-      ],
-      "aliases": {
-        "SimplePackage": "HundV\\LaravelUserPreferences\\UserPreferencesFacade"
-      }
-    }
-  }
 }
